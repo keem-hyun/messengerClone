@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct messengerCloneApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var container: DIContainer = .init(services: Services())
     
     var body: some Scene {
