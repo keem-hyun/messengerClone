@@ -14,6 +14,7 @@
 		9CA8F6042C1D781900988338 /* messengerCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F6032C1D781900988338 /* messengerCloneTests.swift */; };
 		9CA8F60E2C1D781900988338 /* messengerCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F60D2C1D781900988338 /* messengerCloneUITests.swift */; };
 		9CA8F6102C1D781900988338 /* messengerCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F60F2C1D781900988338 /* messengerCloneUITestsLaunchTests.swift */; };
+		9CA8F61E2C1D7C5000988338 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8F61D2C1D7C5000988338 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9CA8F6092C1D781900988338 /* messengerCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messengerCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA8F60D2C1D781900988338 /* messengerCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messengerCloneUITests.swift; sourceTree = "<group>"; };
 		9CA8F60F2C1D781900988338 /* messengerCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messengerCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CA8F61D2C1D7C5000988338 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA8F5F62C1D781900988338 /* Assets.xcassets */,
+				9CA8F61D2C1D7C5000988338 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA8F61E2C1D7C5000988338 /* Colors.xcassets in Resources */,
 				9CA8F5FA2C1D781900988338 /* Preview Assets.xcassets in Resources */,
 				9CA8F5F72C1D781900988338 /* Assets.xcassets in Resources */,
 			);
