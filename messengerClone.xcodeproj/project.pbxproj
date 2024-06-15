@@ -94,9 +94,9 @@
 		9CA8F5F12C1D781800988338 /* messengerClone */ = {
 			isa = PBXGroup;
 			children = (
+				9CA8F61C2C1D7B7800988338 /* Resources */,
 				9CA8F5F22C1D781800988338 /* messengerCloneApp.swift */,
 				9CA8F5F42C1D781800988338 /* ContentView.swift */,
-				9CA8F5F62C1D781900988338 /* Assets.xcassets */,
 				9CA8F5F82C1D781900988338 /* Preview Content */,
 			);
 			path = messengerClone;
@@ -125,6 +125,14 @@
 				9CA8F60F2C1D781900988338 /* messengerCloneUITestsLaunchTests.swift */,
 			);
 			path = messengerCloneUITests;
+			sourceTree = "<group>";
+		};
+		9CA8F61C2C1D7B7800988338 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8F5F62C1D781900988338 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
