@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AuthenticatedView.swift
 //  messengerClone
 //
 //  Created by 김강현 on 6/15/24.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AuthenticatedView: View {
+    @StateObject var authViewModel: AuthenticatedViewModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +22,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    AuthenticatedView(authViewModel: .init())
 }
