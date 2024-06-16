@@ -19,9 +19,12 @@
 		9CA8F6242C1D7F7100988338 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F6232C1D7F7100988338 /* DIContainer.swift */; };
 		9CA8F6272C1D7FBC00988338 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F6262C1D7FBC00988338 /* Services.swift */; };
 		9CA8F62B2C1D809E00988338 /* AuthenticatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F62A2C1D809E00988338 /* AuthenticatedViewModel.swift */; };
-		9CA8F62D2C1D845300988338 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8F62C2C1D845300988338 /* GoogleService-Info.plist */; };
 		9CA8F6302C1D84BA00988338 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9CA8F62F2C1D84BA00988338 /* FirebaseAuth */; };
 		9CA8F6322C1D853400988338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F6312C1D853400988338 /* AppDelegate.swift */; };
+		9CA8F6342C1D874400988338 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8F6332C1D874400988338 /* GoogleService-Info.plist */; };
+		9CA8F6372C1D882800988338 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F6362C1D882800988338 /* AuthenticationService.swift */; };
+		9CA8F63B2C1F0C6B00988338 /* LoginIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F63A2C1F0C6B00988338 /* LoginIntroView.swift */; };
+		9CA8F63D2C1F0C9300988338 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8F63C2C1F0C9300988338 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +60,12 @@
 		9CA8F6232C1D7F7100988338 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		9CA8F6262C1D7FBC00988338 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		9CA8F62A2C1D809E00988338 /* AuthenticatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewModel.swift; sourceTree = "<group>"; };
-		9CA8F62C2C1D845300988338 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9CA8F6312C1D853400988338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CA8F6332C1D874400988338 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CA8F6352C1D87AB00988338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CA8F6362C1D882800988338 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		9CA8F63A2C1F0C6B00988338 /* LoginIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroView.swift; sourceTree = "<group>"; };
+		9CA8F63C2C1F0C9300988338 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +117,10 @@
 		9CA8F5F12C1D781800988338 /* messengerClone */ = {
 			isa = PBXGroup;
 			children = (
+				9CA8F6352C1D87AB00988338 /* Info.plist */,
+				9CA8F6332C1D874400988338 /* GoogleService-Info.plist */,
 				9CA8F5F22C1D781800988338 /* messengerCloneApp.swift */,
 				9CA8F6312C1D853400988338 /* AppDelegate.swift */,
-				9CA8F62C2C1D845300988338 /* GoogleService-Info.plist */,
 				9CA8F6222C1D7F5E00988338 /* General */,
 				9CA8F6282C1D807600988338 /* View */,
 				9CA8F6252C1D7F9F00988338 /* Service */,
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA8F6262C1D7FBC00988338 /* Services.swift */,
+				9CA8F6362C1D882800988338 /* AuthenticationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -185,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				9CA8F6292C1D807D00988338 /* Authentication */,
+				9CA8F6392C1F0C4F00988338 /* MainTab */,
+				9CA8F6382C1F0C4700988338 /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +207,22 @@
 				9CA8F62A2C1D809E00988338 /* AuthenticatedViewModel.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9CA8F6382C1F0C4700988338 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8F63A2C1F0C6B00988338 /* LoginIntroView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9CA8F6392C1F0C4F00988338 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8F63C2C1F0C9300988338 /* MainTabView.swift */,
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA8F61E2C1D7C5000988338 /* Colors.xcassets in Resources */,
-				9CA8F62D2C1D845300988338 /* GoogleService-Info.plist in Resources */,
+				9CA8F6342C1D874400988338 /* GoogleService-Info.plist in Resources */,
 				9CA8F5FA2C1D781900988338 /* Preview Assets.xcassets in Resources */,
 				9CA8F5F72C1D781900988338 /* Assets.xcassets in Resources */,
 			);
@@ -336,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA8F63B2C1F0C6B00988338 /* LoginIntroView.swift in Sources */,
 				9CA8F62B2C1D809E00988338 /* AuthenticatedViewModel.swift in Sources */,
 				9CA8F6272C1D7FBC00988338 /* Services.swift in Sources */,
 				9CA8F6242C1D7F7100988338 /* DIContainer.swift in Sources */,
@@ -343,6 +371,8 @@
 				9CA8F6322C1D853400988338 /* AppDelegate.swift in Sources */,
 				9CA8F5F32C1D781800988338 /* messengerCloneApp.swift in Sources */,
 				9CA8F6212C1D7D1A00988338 /* Color+Ext.swift in Sources */,
+				9CA8F6372C1D882800988338 /* AuthenticationService.swift in Sources */,
+				9CA8F63D2C1F0C9300988338 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +539,7 @@
 				DEVELOPMENT_TEAM = YL7ZX6U88Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = messengerClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -538,6 +569,7 @@
 				DEVELOPMENT_TEAM = YL7ZX6U88Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = messengerClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
